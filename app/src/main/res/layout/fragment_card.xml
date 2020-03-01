@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Card"
+    android:background="@drawable/iback"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:id="@+id/RrquestButtonID"
+            android:src="@drawable/message"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/CardViewID"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+
+      </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

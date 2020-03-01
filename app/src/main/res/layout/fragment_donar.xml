@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DonarFragment"
+    android:background="@android:color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            app:cardElevation="2dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="#F7FFFD"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <RelativeLayout
+                    android:background="@drawable/donner_stoke"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/IssuInputID"
+                            android:drawableLeft="@drawable/issu_icon"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:padding="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:hint="What Missing or Any Issue"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColorHighlight="#66B368"
+                            android:background="@drawable/donner_stoke"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/CommentsInputID"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:padding="10dp"
+                            android:drawableLeft="@drawable/messageicon"
+                            android:layout_width="match_parent"
+                            android:textColorHighlight="#66B368"
+                            android:gravity="top|left"
+                            android:hint="Enter your comments"
+                            android:layout_height="100dp"
+                            android:background="@drawable/donner_stoke"
+                            />
+
+
+                        <EditText
+                            android:id="@+id/EmailAddressID"
+                            android:layout_marginLeft="20dp"
+                            android:drawableLeft="@drawable/emailicon"
+                            android:layout_marginRight="20dp"
+                            android:padding="10dp"
+                            android:textColorHighlight="#66B368"
+                            android:layout_width="match_parent"
+                            android:hint="Enter your email"
+                            android:singleLine="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/donner_stoke"
+                            />
+
+
+
+
+
+                    </LinearLayout>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:backgroundTint="#59BE5F"
+                        android:id="@+id/SendButtonID"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:src="@drawable/send_button"
+                        android:layout_height="wrap_content">
+
+                    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</FrameLayout>

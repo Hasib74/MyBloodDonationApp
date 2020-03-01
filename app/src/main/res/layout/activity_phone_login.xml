@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneLoginActivity"
+    android:background="@drawable/iback">
+
+
+
+
+    <TextView
+        android:id="@+id/dd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Your Phone Number"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="15dp"
+        />
+
+    <TextView
+        android:id="@+id/logtext"
+        android:layout_below="@+id/dd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You will get a code via SMS. Operators rate may be apply"
+        android:textSize="15dp"
+        android:textColor="#999999"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        />
+
+
+    <EditText
+        android:padding="15dp"
+        android:textSize="30dp"
+        android:backgroundTint="#955AFF"
+        android:id="@+id/CountryCodeTextIDID"
+        android:layout_below="@id/logtext"
+        android:layout_width="wrap_content"
+        android:textColorHint="#F1F1F1"
+        android:layout_marginStart="15dp"
+        android:textColor="#673AB7"
+        android:inputType="text"
+        android:layout_marginTop="15dp"
+        android:hint="+Code"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/NumberID"
+        android:layout_marginTop="15dp"
+        android:hint="Mobile Number"
+        android:layout_below="@id/logtext"
+        android:padding="15dp"
+        android:layout_toRightOf="@id/CountryCodeTextIDID"
+        android:textSize="30dp"
+        android:backgroundTint="#955AFF"
+        android:inputType="phone"
+        android:textColorHint="#F1F1F1"
+        android:layout_marginLeft="5dp"
+        android:textColor="#673AB7"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:layout_below="@id/NumberID"
+        android:layout_marginTop="30dp"
+        android:textColor="#999999"
+        android:layout_marginLeft="20dp"
+        android:text="@string/sign"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content">
+    </TextView>
+
+
+    <Button
+        android:id="@+id/PhoneLoginID"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="17dp"
+        android:text="   Next >>"
+        android:gravity="fill"
+        android:background="#673AB7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+
+
+
+
+
+</RelativeLayout>

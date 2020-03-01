@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <RelativeLayout
+           android:background="@drawable/post_banner_stoke"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           
+
+
+        <RelativeLayout
+            android:id="@+id/layoutoneIDID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cardprofileimageID"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/defaltimage"
+                />
+
+            <TextView
+                android:id="@+id/bannerusernameID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="16dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@id/cardprofileimageID"
+                />
+
+
+            <TextView
+                android:id="@+id/HospitalNameID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="14dp"
+                android:singleLine="true"
+                android:textColor="#78A2C2"
+                android:layout_toRightOf="@id/bannerusernameID"
+                />
+
+            <TextView
+                android:id="@+id/LocationNameID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="14dp"
+                android:singleLine="true"
+                android:textColor="#78A2C2"
+                android:layout_toRightOf="@id/HospitalNameID"
+                />
+
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bannerusernameID"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textSize="13dp"
+                android:text="Request For"
+                android:layout_toRightOf="@id/cardprofileimageID"
+                />
+
+            <TextView
+                android:id="@+id/bannerblood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bannerusernameID"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginStart="3dp"
+                android:textSize="13dp"
+                android:layout_toRightOf="@id/text"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layouttwoIDID"
+            android:layout_below="@id/layoutoneIDID"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/PostApplicationID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="14dp"
+                android:textColor="#535353"
+                />
+
+        </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_below="@+id/layouttwoIDID"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#696969"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginLeft="10dp"
+                   />
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp">
+
+
+                   <ImageView
+                       android:id="@+id/LikeID"
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:layout_marginLeft="10dp"
+                       android:src="@drawable/like"
+                       android:layout_centerVertical="true"
+                       />
+
+                   <TextView
+                       android:id="@+id/LikeCountID"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="15dp"
+                       android:layout_marginStart="10dp"
+                       android:layout_centerVertical="true"
+                       android:text="0 Like"
+                       android:layout_toRightOf="@+id/LikeID"
+                       />
+
+                   <TextView
+                       android:id="@+id/CurrentDateID"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="15dp"
+                       android:layout_centerVertical="true"
+                       android:layout_marginRight="10dp"
+                       android:layout_alignParentRight="true"
+                       />
+
+
+
+               </RelativeLayout>
+
+
+
+
+           </RelativeLayout>
+
+       </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

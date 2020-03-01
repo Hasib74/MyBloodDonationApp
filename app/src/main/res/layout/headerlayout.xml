@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/black" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop">
+
+    </ImageView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileID"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/defaltimage"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileID"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="3dp"
+        android:text="UserName"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/BloodGroupp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileID"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/name"
+        android:text="Group"
+        android:textColor="@android:color/holo_red_light">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Addressnav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:text="email address"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>

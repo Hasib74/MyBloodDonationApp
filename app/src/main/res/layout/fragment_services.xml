@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ServicesFragment"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            app:cardElevation="2dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:background="#FFFEF1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/DonnerC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#D58E25"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Donner Communication"
+                        />
+
+                    <com.hsalf.smilerating.SmileRating
+                        android:id="@+id/DonnerCommunationSmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </com.hsalf.smilerating.SmileRating>
+
+                    <TextView
+                        android:id="@+id/Over"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#D58E25"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Donaction Systeam"
+                        />
+
+                    <com.hsalf.smilerating.SmileRating
+                        android:id="@+id/DonationSysteam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </com.hsalf.smilerating.SmileRating>
+
+
+                </LinearLayout>
+
+
+
+                <RelativeLayout
+                    android:background="@drawable/services_stoke"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</FrameLayout>

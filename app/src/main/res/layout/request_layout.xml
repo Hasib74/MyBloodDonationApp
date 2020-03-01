@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="10dp"
+        android:elevation="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+
+        <RelativeLayout
+            android:background="#F8F8F8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="@drawable/requeststoke"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/RimageID"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/defaltimage"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:id="@+id/RUserID"
+                    android:layout_toRightOf="@id/RimageID"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="90dp"
+                    android:background="#F7AE43"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/RBloodGroupID"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

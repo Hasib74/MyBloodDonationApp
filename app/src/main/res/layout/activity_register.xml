@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iback"
+    tools:context=".RegisterActivity">
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/oneID"
+        android:paddingBottom="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:id="@+id/RegsuetLogoID"
+            android:layout_width="80dp"
+            android:src="@drawable/bloodpng"
+            android:layout_height="80dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/RegisterTextID"
+            android:layout_below="@+id/RegsuetLogoID"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="SBB Need Register"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <EditText
+            android:layout_below="@+id/RegisterTextID"
+            android:layout_marginTop="10dp"
+            android:id="@+id/RegisteEmailID"
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:hint="Enter Email"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:background= "@drawable/edittext_design"
+            android:layout_height="wrap_content">
+        </EditText>
+
+
+        <EditText
+            android:layout_below="@id/RegisteEmailID"
+            android:id="@+id/RegisterPassword"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_design"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:hint="Enter Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+
+        <EditText
+            android:layout_below="@id/RegisterPassword"
+            android:id="@+id/RegisterCPassword"
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_design"
+            android:inputType="textPassword"
+            android:hint="Retype Password"
+            android:singleLine="true"
+            android:layout_height="wrap_content">
+        </EditText>
+
+
+        <Button
+            android:id="@+id/RegisterButtonID"
+            android:layout_below="@+id/RegisterCPassword"
+            android:layout_marginTop="17dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="Register"
+            android:background="@drawable/register_button_design"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/OR"
+                android:background="#000"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginRight="5dp"
+                android:background="#000"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/OR"
+                />
+
+            <TextView
+                android:id="@+id/OR"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@android:color/black"
+                android:text="OR"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/AlreAdyHaveAccountButtonID"
+            android:layout_below="@+id/layout"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/login_buttondesign"
+            android:textSize="16sp"
+            android:layout_marginBottom="15dp"
+            android:text="Already Have A Account"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

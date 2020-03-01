@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SubmitFragement"
+    android:background="@android:color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            app:cardElevation="2dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="#F7FFF1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:background="@drawable/submit_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/cheackingpeocesstext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#569259"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Checking process"
+                            />
+
+                        <com.hsalf.smilerating.SmileRating
+                            android:id="@+id/CheakingprocessIDSmile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </com.hsalf.smilerating.SmileRating>
+
+
+                        <TextView
+                            android:id="@+id/Commu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#569259"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Communication Service"
+                            />
+
+                        <com.hsalf.smilerating.SmileRating
+                            android:id="@+id/CommunactionServicesSmill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </com.hsalf.smilerating.SmileRating>
+
+                        <TextView
+                            android:id="@+id/Over"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#569259"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="OverAll Service"
+                            />
+
+                        <com.hsalf.smilerating.SmileRating
+                            android:id="@+id/OverAllSmill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </com.hsalf.smilerating.SmileRating>
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</FrameLayout>

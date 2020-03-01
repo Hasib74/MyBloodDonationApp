@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "369570483500",
+    "firebase_url": "https://sblood-bank-967f9.firebaseio.com",
+    "project_id": "sblood-bank-967f9",
+    "storage_bucket": "sblood-bank-967f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369570483500:android:9309cdc0ab3da4f5367089",
+        "android_client_info": {
+          "package_name": "com.example.sbb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369570483500-hle6jr84s5tvs6p1i43p4q8140elt6f0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sbb",
+            "certificate_hash": "a7f7e58e8ebbf0feb7906658fbd8d6a4e19de488"
+          }
+        },
+        {
+          "client_id": "369570483500-pbopg0dlfvo9olm336t1ghdrugcm78tm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQq5COA9zBKYHy8EBf-JXTHDrr3zA8YVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369570483500-pbopg0dlfvo9olm336t1ghdrugcm78tm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

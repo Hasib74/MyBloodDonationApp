@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iback"
+    tools:context=".ProfileActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/UpdateButtonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_check_black_24dp">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ProfileToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="SetUp your Profile First"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/ProfileProgressbarID"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@android:color/white" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ProfileToolbarID"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/picturelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20sp">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/ProfileImageID"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/defaltimage"></de.hdodenhof.circleimageview.CircleImageView>
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/AddImageID"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:elevation="4dp"
+                            android:src="@drawable/plus">
+
+                        </de.hdodenhof.circleimageview.CircleImageView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/usernamelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/picturelayout"
+                    android:layout_marginTop="5dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/UsernameID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:backgroundTint="@color/colorPrimary"
+                            android:hint="Enter User Name"
+                            android:padding="10dp"
+                            android:textColorHighlight="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimary">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/phonenmberlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/usernamelayout"
+                    android:layout_marginTop="5dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/PhoneID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Phone Number"
+                            android:inputType="number"
+                            android:padding="10dp"
+                            android:singleLine="true">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/genderlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phonenmberlayout"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/gendertext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Gender"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/LayoutSex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gendertext"
+                        android:weightSum="3">
+
+                        <Button
+                            android:id="@+id/MaleButtonID"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/blood_buttondesign"
+                            android:text="Male"></Button>
+
+                        <Button
+                            android:id="@+id/FemailButtonIDID"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/blood_buttondesign"
+                            android:text="Femail"></Button>
+
+                        <Button
+                            android:id="@+id/OthersBuID"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/blood_buttondesign"
+                            android:text="Other"></Button>
+
+                    </LinearLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/GenderID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gendertext"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimary"
+                            android:drawableTint="@color/colorPrimary"
+                            android:text="Male" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:buttonTint="@color/colorPrimary"
+                            android:text="Female" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:buttonTint="@color/colorPrimary"
+                            android:text="Others" />
+
+                    </RadioGroup>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/addresslayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/genderlayout"
+                    android:layout_marginStart="5dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/AddressID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Your Address"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:singleLine="true">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/agelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addresslayout"
+                    android:layout_marginStart="5dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/AgeIDID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Your Age"
+                            android:inputType="number"
+                            android:padding="10dp"
+                            android:singleLine="true">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bloodlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/agelayout"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/groupname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blood Group"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:id="@+id/LoutID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/groupname"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <Button
+                            android:id="@+id/APlusID"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/blood_buttondesign"
+                            android:text="A+" />
+
+                        <Button
+                            android:id="@+id/AminusID"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/blood_buttondesign"
+                            android:text="A-" />
+
+                        <Button
+                            android:id="@+id/BplusID"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/blood_buttondesign"
+                            android:text="B+" />
+
+                        <Button
+                            android:id="@+id/BminusID"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/blood_buttondesign"
+                            android:text="B-" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/LoutID"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <Button
+                            android:id="@+id/OplusID"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/blood_buttondesign"
+                            android:text="O+" />
+
+                        <Button
+                            android:id="@+id/OminusID"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/blood_buttondesign"
+                            android:text="O-" />
+
+                        <Button
+                            android:id="@+id/ABplusID"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/blood_buttondesign"
+                            android:text="AB+" />
+
+                        <Button
+                            android:id="@+id/AbminusID"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/blood_buttondesign"
+                            android:text="AB-" />
+
+
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/groupname"
+                        android:layout_marginTop="7dp"
+                        android:visibility="gone">
+
+                        <RadioGroup
+                            android:id="@+id/BloodID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorPrimary"
+                                android:text="AB+" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:text="A+" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:text="O+" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:text="B+" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:text="A-" />
+                            />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:text="O-" />
+                            />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:text="B-" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:text="AB-" />
+
+                        </RadioGroup>
+
+                    </HorizontalScrollView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/hightlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bloodlayout"
+                    android:layout_marginTop="5dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/HightID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Your Height"
+                            android:inputType="numberDecimal"
+                            android:padding="10dp"
+                            android:singleLine="true">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hightlayout"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20sp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/IDNO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Your ID"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:singleLine="true">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

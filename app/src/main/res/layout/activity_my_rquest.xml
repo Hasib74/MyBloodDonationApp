@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyRquestActivity"
+    android:background="@drawable/iback">
+
+
+    <ImageView
+        android:id="@+id/ListLogoIConID"
+        android:src="@drawable/listlogo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="90dp"
+        android:layout_height="90dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/NoListTextID"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_marginTop="7dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ListLogoIConID"
+        android:text="No Users Found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/RequestToolID"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/RequestToolID"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ListRecylearViewID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

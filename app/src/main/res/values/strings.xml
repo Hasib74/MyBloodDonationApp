@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SBB</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">The App is basially </string>
+
+    <string name="sign"><![CDATA[By signing up, you agree to the Terms and Conditions & Privacy Policy. You also agree to let Allo send your contacts and location to Google periodically. People with your number c an connect with you astoss Google services.]]></string>
+
+</resources>

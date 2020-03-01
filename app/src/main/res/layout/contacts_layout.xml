@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="5dp"
+       android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="80dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/Leftlayout"
+                android:background="#5A4D94"
+                android:layout_alignParentRight="true"
+                android:layout_width="90dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/UserBloodID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="30sp"
+                    android:text="AB+"
+                    android:textColor="@android:color/white"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@id/Leftlayout"
+                android:background="#F3F3F3"
+
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ProfileImageIDID"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/defaltimage"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="7dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@id/ProfileImageIDID"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/UserNameIDID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sajib Roy"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/AddrIDID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/UserNameIDID"
+                        android:layout_marginTop="3dp"
+                        android:textSize="16sp"
+                        android:text="Badda dhaka"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

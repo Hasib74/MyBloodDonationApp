@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/SenderProfileImageID"
+        android:layout_width="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/defaltimage"
+        android:layout_height="35dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <RelativeLayout
+            android:id="@+id/RImageLayoutID"
+            android:layout_width="270dp"
+            android:background="@drawable/sendmessage_designdd"
+            android:layout_toRightOf="@+id/SenderProfileImageID"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="190dp">
+
+
+            <TextView
+                android:id="@+id/imageTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:elevation="3dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                />
+
+
+             <TextView
+                android:id="@+id/imagedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:elevation="3dp"
+                 android:layout_marginBottom="10dp"
+                    android:textColor="@android:color/white"
+                 android:layout_marginRight="10dp"
+                android:textSize="12dp"
+                android:layout_toLeftOf="@+id/imageTime"
+                android:layout_alignParentBottom="true"
+                />
+
+
+            <ImageView
+                android:id="@+id/ImageSenderID"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                />
+        </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/MessagID"
+        android:textSize="14dp"
+        android:layout_toRightOf="@id/SenderProfileImageID"
+        android:layout_marginTop="25dp"
+        android:elevation="4dp"
+        android:layout_marginStart="7dp"
+        android:textColor="@android:color/black"
+        android:text="Hi how are you"
+        android:background="@drawable/sendmessage_designdd"
+        android:padding="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+    </TextView>
+
+        <TextView
+            android:id="@+id/TimeIDID"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/MessagID"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="70dp"
+            android:text="5.00 PM"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:id="@+id/DateIDID"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/MessagID"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/TimeIDID"
+            android:layout_marginStart="7dp"
+            android:text="5 nun"
+            android:textSize="12dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

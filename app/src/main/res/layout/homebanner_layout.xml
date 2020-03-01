@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:elevation="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:background="@drawable/cardbanckground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                <RelativeLayout
+                    android:background="#5A4D94"
+                    android:id="@+id/layoutFirst"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="0dp"
+                         android:gravity="center"
+                         android:layout_weight="1">
+
+                         <LinearLayout
+                             android:orientation="vertical"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content">
+
+                             <de.hdodenhof.circleimageview.CircleImageView
+                                 android:layout_width="50dp"
+                                 android:id="@+id/ProfileImageIDIDID"
+                                 android:layout_gravity="center"
+                                 android:src="@drawable/profile"
+                                 android:layout_height="50dp">
+
+                             </de.hdodenhof.circleimageview.CircleImageView>
+
+                             <TextView
+                                 android:id="@+id/UserNameIDIDID"
+                                 android:textSize="15sp"
+                                 android:textColor="@android:color/white"
+                                 android:text="Sajib Roy"
+                                 android:layout_gravity="center"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content">
+
+                             </TextView>
+
+                         </LinearLayout>
+
+                     </LinearLayout>
+
+                        <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="0dp"
+                         android:gravity="center"
+                         android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/BloodGroupID"
+                                android:textSize="35sp"
+                                android:textColor="@android:color/white"
+                                android:textStyle="normal"
+                                android:text="AB+"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                     </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_toRightOf="@id/layoutFirst"
+                    android:layout_width="match_parent"
+                    android:background="#F3F3F3"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="2"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="0dp">
+
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/location"
+                                            android:src="@drawable/ic_location_on_black_24dp"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            />
+                                        <TextView
+                                            android:id="@+id/AddressIDID"
+                                            android:layout_width="wrap_content"
+                                            android:layout_toRightOf="@id/location"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginStart="5dp"
+                                            android:textSize="18sp"
+                                            android:textColor="@android:color/black"
+                                            android:textAllCaps="true"
+                                            android:text="Badda Dhaka"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+
+                                    </RelativeLayout>
+
+
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/location"
+                                        android:src="@drawable/ic_phone_iphone_black_24dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        />
+                                    <TextView
+                                        android:id="@+id/PhoneNumberID"
+                                        android:layout_width="wrap_content"
+                                        android:layout_toRightOf="@id/location"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginStart="5dp"
+                                        android:textSize="18sp"
+                                        android:textColor="@android:color/black"
+                                        android:textAllCaps="true"
+                                        android:text="+8801771330378"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="0dp">
+
+                            <LinearLayout
+                                android:weightSum="3"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/age"
+                                        android:layout_width="wrap_content"
+                                        android:textSize="15dp"
+                                        android:typeface="monospace"
+                                        android:text="AGE"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/AgeID"
+                                        android:layout_width="wrap_content"
+                                        android:text="15"
+                                        android:textSize="20dp"
+                                        android:textColor="@android:color/black"
+                                        android:layout_height="wrap_content">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/gender"
+                                        android:layout_width="wrap_content"
+                                        android:textSize="15dp"
+                                        android:typeface="monospace"
+                                        android:text="GENDER"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/GenderIDID"
+                                        android:layout_width="wrap_content"
+                                        android:text="Male"
+                                        android:textSize="20dp"
+                                        android:textColor="@android:color/black"
+                                        android:layout_height="wrap_content">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/gender"
+                                        android:layout_width="wrap_content"
+                                        android:textSize="15dp"
+                                        android:typeface="monospace"
+                                        android:text="Height"
+                                        android:textAllCaps="true"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/HigehtIDId"
+                                        android:layout_width="wrap_content"
+                                        android:text="5.3''"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="20dp"
+                                        android:layout_height="wrap_content">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

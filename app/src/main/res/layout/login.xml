@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iback"
+    tools:context=".Login_Activity">
+
+    <ImageView
+        android:id="@+id/GuestLoginID"
+        android:src="@drawable/cross_sign"
+        android:layout_width="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="30dp">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/layoutFiveID"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+        <ImageView
+            android:layout_marginStart="25dp"
+            android:id="@+id/fuck"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/stamforduniversity"
+            android:layout_marginLeft="25dp" />
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/fuck"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginBottom="50dp"
+            android:text="Welcome To Stamford Blood bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="25dp"
+        android:padding="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="80dp"
+            android:src="@drawable/bloodpng"
+            android:layout_height="80dp">
+        </ImageView>
+
+
+
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_below="@id/Logo"
+            android:id="@+id/layoutoneID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <TextView
+                android:id="@+id/dd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@android:color/black"
+                android:text="Login To SBB"
+                />
+
+            <LinearLayout
+                android:layout_below="@+id/dd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/EmialID"
+                        android:background="@drawable/edittext_design"
+                        android:layout_width="match_parent"
+                        android:padding="12dp"
+                        android:inputType="textEmailAddress"
+                        android:hint="Email Address"
+                        android:textSize="17sp"
+                        android:singleLine="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/PasswordID"
+                        android:background="@drawable/edittext_design"
+                        android:layout_width="match_parent"
+                        android:padding="12dp"
+                        android:inputType="textPassword"
+                        android:hint="Email Password"
+                        android:textSize="17sp"
+                        android:singleLine="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/LoginButtonID"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textSize="17sp"
+                        android:textColor="@android:color/white"
+                        android:text="Sign In"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/login_buttondesign"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutThreeID"
+        android:visibility="gone"
+        android:layout_above="@+id/layoutTwoID"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="wrap_content">
+
+
+
+        <Button
+            android:id="@+id/PhoneLoginID"
+            android:background="@drawable/phone_signin_design"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:text="Phone Login"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/layoutTwoID"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/LoginRegisterTextID"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_red_light"
+            android:text="Register Account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/ForgotPasswordID"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/holo_red_light"
+            android:text="Forgot Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

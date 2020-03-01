@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbckAvtivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/HeadToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+        <ImageView
+            android:id="@+id/MM"
+            android:layout_width="60dp"
+            android:elevation="5dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/smill"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/MM"
+            android:textColor="@android:color/white"
+            android:text="My Feedback"
+            android:textStyle="bold"
+            android:elevation="5dp"
+            android:layout_marginTop="7dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:src="@drawable/feedbacimage"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </ImageView>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/TabLayoutUDUDU"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            app:tabTextColor="@android:color/white"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+    </RelativeLayout>
+
+  <androidx.viewpager.widget.ViewPager
+      android:layout_below="@+id/HeadToolbarID"
+      android:id="@+id/ViewPagerIDID"
+      android:layout_width="match_parent"
+      android:background="@android:color/white"
+      android:layout_height="match_parent">
+
+
+
+  </androidx.viewpager.widget.ViewPager>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13dp"
+        android:text="Swipe to next >>"
+        />
+
+
+</RelativeLayout>
